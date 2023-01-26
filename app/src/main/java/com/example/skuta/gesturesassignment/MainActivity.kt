@@ -61,6 +61,7 @@ class MainActivity : AppCompatActivity(), GestureDetector.OnGestureListener {
     }
 
     override fun onLongPress(e: MotionEvent) {
+        flingText.text = "You sure like holding this button down, don't you?"
         makeText(this, "You're pressing for a long time!", LENGTH_LONG).show()
     }
 
